@@ -111,7 +111,7 @@ ul
 	display: none;
 }
 
-.cafe
+#cafe
 {
 	text-align: center;
 	background-color: #dbdce3;
@@ -124,9 +124,15 @@ ul
 
 .cafe svg
 {
+	height: 1.5em;
 	fill: #D87E28;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.cafe > ul > li
+{
+	margin-bottom: 10px
 }
 
 .menu dd
@@ -166,6 +172,11 @@ div.story
 {
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+#story
+{
+	background-color: #dbdce3;
 }
 
 @media screen and (min-width: 768px) {
