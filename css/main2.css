@@ -1,3 +1,7 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 body {
   font-family: "Lato", Helvetica Neue, Helvetica, sans-serif;
   font-size: 16px;
@@ -25,7 +29,6 @@ nav {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   z-index: 9999;
-  text-decoration: none;
   /* instead of using #logo */ }
   nav svg {
     height: 1em;
@@ -38,9 +41,12 @@ nav {
     display: inline;
     padding: 0.5em; }
   nav a {
-    font-variant: small-caps; }
+    color: white;
+    font-variant: small-caps;
+    text-decoration: none; }
   nav a:hover {
-    color: #D87E28; }
+    color: #D87E28;
+    text-decoration: none; }
 
 ul {
   display: inline-block;
@@ -61,5 +67,97 @@ ul {
   font-style: italic; }
   #headline svg {
     display: none; }
+
+.cafe {
+  text-align: center;
+  background-color: #dbdce3; }
+  .cafe img {
+    border-radius: 5px; }
+  .cafe svg {
+    height: 1.5em;
+    fill: orange-color;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .cafe li {
+    margin-bottom: 10px; }
+
+.menu dd {
+  font-style: italic;
+  padding-left: 1em; }
+
+.story {
+  background-color: #dbdce3; }
+  .story img {
+    float: right;
+    height: 300px;
+    margin-left: 1em;
+    border-radius: 5px; }
+  .story div {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+footer {
+  border-top: solid 3px #D87E28;
+  font-size: 12px;
+  clear: both;
+  padding-top: 1em;
+  background-color: #afb3c2; }
+  footer div {
+    background-color: #afb3c2; }
+
+.content {
+  padding: 34px; }
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 20px; }
+
+  h2 {
+    text-align: center;
+    padding-bottom: 1em; }
+
+  nav {
+    background-color: rgba(24, 28, 34, 0.8); }
+    nav li {
+      padding: 0.5em;
+      padding-left: 1em;
+      padding-right: 1em; }
+
+  #header {
+    background-image: url(../img/background-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    text-align: right;
+    height: 550px; }
+
+  #motto {
+    display: block; }
+
+  #headline {
+    font-style: 1.25em;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em; }
+    #headline svg {
+      height: 1.5em;
+      margin-bottom: 1em;
+      fill: #D87E28;
+      display: inline-block; }
+
+  .story img {
+    height: 400px; }
+
+  footer .col-sm-9 {
+    text-align: right; } }
+@media only screen and (min-width: 992px) {
+  #header {
+    background-image: url(../img/background-md.jpg); }
+
+  h1 {
+    font-size: 4em; } }
+@media break-md {
+  #header {
+    background-image: url(../img/background-lg.jpg); } }
 
 /*# sourceMappingURL=main2.css.map */

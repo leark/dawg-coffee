@@ -1,12 +1,24 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
 $font-stack: Helvetica Neue, Helvetica, sans-serif;
 $orange-color: #D87E28;
+$background-color: #E9EAEE;
+$h2-color: #BC6026;
+$nav-color: #181C22;
+$nav-trans-color: rgba(24, 28, 34, 0.8);
+$break-sm: "only screen and (min-width : 768px)";
+$break-md: "only screen and (min-width : 992px)";
+$break-lg: "only screen and (min-width : 1200px)";
 
 body 
 {
 	font-family: 'Lato', $font-stack;
 	font-size: 16px;
 	font-weight: 300;
-	background-color: #E9EAEE;
+	background-color: $background-color;
 }
 
 h1, h4, h5, h6
@@ -17,7 +29,7 @@ h1, h4, h5, h6
 	
 	h2
 	{
-		color: #BC6026;
+		color: $h2-color;
 		margin: 0px;
 		margin-left: 15px;
 	}
@@ -30,7 +42,7 @@ h1, h4, h5, h6
 
 nav
 {
-	background-color: #181C22;
+	background-color: $nav-color;
 	color: white;
 	position: fixed;
 	top: 0px;
@@ -39,7 +51,6 @@ nav
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	z-index: 9999;
-	text-decoration: none;
 
 	svg
 	{
@@ -66,12 +77,15 @@ nav
 
 	a
 	{
+		color: white;
 		font-variant: small-caps;
+		text-decoration: none;
 	}
 
 	a:hover
 	{
 		color: $orange-color;
+		text-decoration: none;
 	}
 }
 
@@ -106,3 +120,160 @@ ul
 	}
 }
 
+.cafe
+{
+	text-align: center;
+	background-color: darken($background-color, 5%);
+
+	img
+	{
+		border-radius: 5px;
+	}
+
+	svg
+	{
+		height: 1.5em;
+		fill: orange-color;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	li
+	{
+		margin-bottom: 10px;
+	}
+}
+
+.menu dd
+{
+	font-style: italic;
+	padding-left: 1em;
+}
+
+
+
+.story 
+{
+	background-color: darken($background-color, 5%);
+
+	img
+	{
+		float: right;
+		height: 300px;
+		margin-left: 1em;
+		border-radius: 5px;
+	}
+
+	div
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+footer
+{
+	border-top: solid 3px $orange-color;
+	font-size: 12px;
+	clear: both;
+	padding-top: 1em;
+	background-color: darken($background-color, 20%);
+
+	div
+	{
+		background-color: darken($background-color, 20%);
+	}
+}
+
+.content
+{
+	padding: 34px;
+}
+
+@media #{$break-sm}
+{
+	body
+	{
+		font-size: 20px
+	}
+
+	h2
+	{
+		text-align: center;
+		padding-bottom: 1em;
+	}
+
+	nav
+	{
+		background-color: $nav-trans-color;
+		
+		li
+		{
+			padding: 0.5em;
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+	}
+
+	#header
+	{
+		background-image: url(../img/background-sm.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		color: white;
+		text-align: right;
+		height: 550px;
+	}
+
+	#motto
+	{
+		display: block;
+	}
+
+	#headline
+	{
+		font-style: 1.25em;
+		text-align: center;
+		padding-top: 3em;
+		padding-bottom: 3em;
+
+		svg
+		{
+			height: 1.5em;
+			margin-bottom: 1em;
+			fill: $orange-color;
+			display: inline-block;
+		}
+	}
+
+	.story img
+	{
+		height: 400px;
+	}
+
+	footer .col-sm-9
+	{
+		text-align: right;
+	}
+}
+
+@media #{$break-md}
+{
+	#header
+	{
+		background-image: url(../img/background-md.jpg);
+	}
+
+	h1
+	{
+		font-size: 4em;
+	}
+}
+
+@media #{break-md}
+{
+	#header
+	{
+		background-image: url(../img/background-lg.jpg);
+	}
+}
