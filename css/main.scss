@@ -1,7 +1,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
 
 $font-stack: Helvetica Neue, Helvetica, sans-serif;
 $orange-color: #D87E28;
@@ -9,9 +9,6 @@ $background-color: #E9EAEE;
 $h2-color: #BC6026;
 $nav-color: #181C22;
 $nav-trans-color: rgba(24, 28, 34, 0.8);
-$break-sm: "only screen and (min-width : 768px)";
-$break-md: "only screen and (min-width : 992px)";
-$break-lg: "only screen and (min-width : 1200px)";
 
 body 
 {
@@ -190,7 +187,7 @@ footer
 	padding: 34px;
 }
 
-@media #{$break-sm}
+@media only screen and (min-width : 768px)
 {
 	body
 	{
@@ -257,7 +254,7 @@ footer
 	}
 }
 
-@media #{$break-md}
+@media only screen and (min-width : 992px)
 {
 	#header
 	{
@@ -270,7 +267,7 @@ footer
 	}
 }
 
-@media #{break-md}
+@media only screen and (min-width : 1200px)
 {
 	#header
 	{
