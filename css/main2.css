@@ -1,23 +1,25 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
 body {
   font-family: "Lato", Helvetica Neue, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 300;
   background-color: #E9EAEE; }
 
-h1, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", Helvetica Neue, Helvetica, sans-serif;
   margin-top: 20px;
   margin-bottom: 20px; }
-  h1 h2, h4 h2, h5 h2, h6 h2 {
-    color: #BC6026;
-    margin: 0px;
-    margin-left: 15px; }
-  h1 h3, h4 h3, h5 h3, h6 h3 {
-    margin-top: 0px; }
+
+h2 {
+  color: #BC6026;
+  margin: 0px;
+  margin-left: 15px; }
+
+h3 {
+  margin-top: 0px; }
 
 nav {
   background-color: #181C22;
@@ -28,6 +30,7 @@ nav {
   width: 100%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  font-size: 16px;
   z-index: 9999;
   /* instead of using #logo */ }
   nav svg {
@@ -68,6 +71,9 @@ ul {
   #headline svg {
     display: none; }
 
+#cafe, #story {
+  background-color: #dbdce3; }
+
 .cafe {
   text-align: center;
   background-color: #dbdce3; }
@@ -75,7 +81,7 @@ ul {
     border-radius: 5px; }
   .cafe svg {
     height: 1.5em;
-    fill: orange-color;
+    fill: #D87E28;
     margin-top: 10px;
     margin-bottom: 10px; }
   .cafe li {
@@ -92,9 +98,10 @@ ul {
     height: 300px;
     margin-left: 1em;
     border-radius: 5px; }
-  .story div {
-    padding-left: 20px;
-    padding-right: 20px; }
+
+div.story {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 footer {
   border-top: solid 3px #D87E28;
@@ -156,7 +163,7 @@ footer {
 
   h1 {
     font-size: 4em; } }
-@media break-md {
+@media only screen and (min-width: 1200px) {
   #header {
     background-image: url(../img/background-lg.jpg); } }
 

@@ -12,14 +12,18 @@ Password: EverythingWrong
 > TA, Prof
 
 ##### 3. Did you complete any advanced extensions to this challenge? If so, what? #####
-> I did part of SASS (as the end result doesn't look close to original) and implemented blur effect on the header image. 
+> I used SASS and implemented blur effect on the header image. 
 The webpage that uses SASS generated CSS is 
 http://students.washington.edu/shl7/info343/dawg-coffee/index2.html
 which uses
 http://students.washington.edu/shl7/info343/dawg-coffee/css/main2.css
+which was generated from
+http://students.washington.edu/shl7/info343/dawg-coffee/css/main2.scss
+
+Blur effect is applied to both indexes.
 
 ##### 4. Approximately how many hours did it take you to complete this challenge? #####
-> Not including the advanced extensions, I spent about 8 or so hours. With advanced extensions, probably around 11 hours.
+> Not including the advanced extensions, I spent about 6 or so hours. With advanced extensions, probably around 9 hours.
 
 ##### 5. Did you encounter any problems in this challenge we should warn students about in the future? How can we make the challenge better? #####
 > I saw that most people who are new to the class and haven't taken CSE154 or had any prior web programming assignment really struggle with just setting up the html to dealing with margins and paddings. They also struggled with putting elements inside other elements. For example, whether or not to put the svg inside the unordered list in the navigation bar. Maybe class skipped way too much at the beginning (bootstrap didn't really help either I don't think to clear confusion).
